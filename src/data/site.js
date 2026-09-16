@@ -15,51 +15,83 @@ export const nav = [
 
 export const hero = {
   eyebrow: "ICONIC GROUP",
-  headline: ["Materials That Shape", "Modern Footwear."],
-  body: "Footwear materials and components built for manufacturers, brands and modern footwear production.",
+  headline: ["Materials That Shape", "Modern Footwear & Apparel."],
+  body: "Footwear, apparel and textile materials built for modern manufacturing.",
   primaryCta: { label: "Explore Materials", href: "#materials" },
   secondaryCta: { label: "Send an Inquiry", href: "#inquiry" },
-  images: [
-    {
-      src: "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?auto=format&fit=crop&w=1800&q=80",
-      alt: "Premium modern footwear construction",
-    },
-    {
-      src: "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?auto=format&fit=crop&w=1800&q=80",
-      alt: "Premium apparel and garment materials",
-    },
-    {
-      src: "https://images.unsplash.com/photo-1617038260897-41a1b14f0dfe?auto=format&fit=crop&w=1800&q=80",
-      alt: "Technical textile and mesh material",
-    },
-    {
-      src: "https://images.unsplash.com/photo-1490367532201-b9bc1dc483f6?auto=format&fit=crop&w=1800&q=80",
-      alt: "Leather and synthetic material texture",
-    },
-    {
-      src: "https://images.unsplash.com/photo-1460353581641-37baddab0fa2?auto=format&fit=crop&w=1800&q=80",
-      alt: "Footwear sole and outsole material detail",
-    },
-    {
-      src: "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=1800&q=80",
-      alt: "Apparel and footwear material editorial",
-    },
+  showcase: {
+    title: "ICONIC GROUP",
+    subtitle: "Material Library",
+    panels: [
+      {
+        label: "Footwear Materials",
+        image: "https://images.unsplash.com/photo-1460353581641-37baddab0fa2?auto=format&fit=crop&w=1200&q=80",
+      },
+      {
+        label: "Apparel & Textiles",
+        image: "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=900&q=80",
+      },
+      {
+        label: "Material Components",
+        image: "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=900&q=80",
+      },
+    ],
+  },
+  materialCards: [
+    { category: "FOOTWEAR", title: "Sneaker Form", image: "https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=700&q=80" },
+    { category: "APPAREL", title: "Editorial Wear", image: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=700&q=80" },
+    { category: "TEXTILE", title: "Yarn Texture", image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=700&q=80" },
+    { category: "FOOTWEAR", title: "Casual Footwear", image: "https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=700&q=80" },
+    { category: "APPAREL", title: "Modern Style", image: "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=700&q=80" },
+    { category: "TEXTILE", title: "Folded Fabric", image: "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=700&q=80" },
+    { category: "FOOTWEAR", title: "Heel Construction", image: "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=700&q=80" },
+    { category: "APPAREL", title: "Street Fashion", image: "https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=700&q=80" },
+    { category: "TEXTILE", title: "Knitwear", image: "https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=700&q=80" },
+    { category: "FOOTWEAR", title: "Sole Materials", image: "https://images.unsplash.com/photo-1460353581641-37baddab0fa2?auto=format&fit=crop&w=700&q=80" },
+    { category: "APPAREL", title: "Runway Ready", image: "https://images.unsplash.com/photo-1469334031218-e382a71b716b?auto=format&fit=crop&w=700&q=80" },
+    { category: "TEXTILE", title: "Woven Surface", image: "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?auto=format&fit=crop&w=700&q=80" },
+    { category: "FOOTWEAR", title: "Leather Surface", image: "https://images.unsplash.com/photo-1490367532201-b9bc1dc483f6?auto=format&fit=crop&w=700&q=80" },
+    { category: "APPAREL", title: "Womenswear", image: "https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=700&q=80" },
+    { category: "TEXTILE", title: "Apparel Hang", image: "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=700&q=80" },
+    { category: "FOOTWEAR", title: "White Upper", image: "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=700&q=80" },
+    { category: "APPAREL", title: "Evening Look", image: "https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=700&q=80" },
+    { category: "TEXTILE", title: "Fabric Drape", image: "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=700&q=80" },
+    { category: "FOOTWEAR", title: "Lifestyle Pair", image: "https://images.unsplash.com/photo-1575537302964-96cd47c3062f?auto=format&fit=crop&w=700&q=80" },
+    { category: "APPAREL", title: "Urban Fashion", image: "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=700&q=80" },
+    { category: "TEXTILE", title: "Garment Stack", image: "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?auto=format&fit=crop&w=700&q=80" },
+    { category: "FOOTWEAR", title: "Upper Detail", image: "https://images.unsplash.com/photo-1460353581641-37baddab0fa2?auto=format&fit=crop&w=700&q=80&sat=-15" },
+    { category: "APPAREL", title: "Fashion Portrait", image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=700&q=80" },
+    { category: "TEXTILE", title: "Shirt Textile", image: "https://images.unsplash.com/photo-1586790170083-2f9ceadc732d?auto=format&fit=crop&w=700&q=80" },
+    { category: "FOOTWEAR", title: "Sport Silhouette", image: "https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=700&q=80&sat=-10" },
+    { category: "APPAREL", title: "Menswear", image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=700&q=80" },
+    { category: "TEXTILE", title: "Fabric Rolls", image: "https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&w=700&q=80" },
+    { category: "FOOTWEAR", title: "Court Style", image: "https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=700&q=80&sat=-15" },
+    { category: "APPAREL", title: "Casual Style", image: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=700&q=80" },
+    { category: "TEXTILE", title: "Denim Texture", image: "https://images.unsplash.com/photo-1560243563-062bfc001d68?auto=format&fit=crop&w=700&q=80" },
+    { category: "FOOTWEAR", title: "Trainer Detail", image: "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=700&q=80&sat=-10" },
+    { category: "APPAREL", title: "Tailored Look", image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=700&q=80" },
+    { category: "TEXTILE", title: "Tailoring Cloth", image: "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&w=700&q=80" },
+    { category: "FOOTWEAR", title: "Foam System", image: "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=700&q=80&sat=-20" },
+    { category: "APPAREL", title: "Studio Wear", image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=700&q=80" },
+    { category: "TEXTILE", title: "Outerwear Cloth", image: "https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=700&q=80" },
+    { category: "APPAREL", title: "Mens Editorial", image: "https://images.unsplash.com/photo-1552374196-c4e7ffc6e126?auto=format&fit=crop&w=700&q=80" },
   ],
 };
 
 export const whatWeSupply = {
-  eyebrow: "ICONIC GROUP",
-  heading: "What We Supply",
-  body: "Materials and components for the products people wear, move in and live in.",
-  divisions: [
+  lead: "Materials and components for the products people wear, move in, and live in.",
+  heading: "What we supply",
+  hint: "Click a card to flip it and see what's inside.",
+  shelfTitle: "The material shelf",
+  shelfHint: "Click or tap a card to flip it.",
+  cards: [
     {
       id: "footwear",
-      number: "01",
-      name: "Footwear",
-      description: "Materials and components for modern footwear manufacturing.",
+      title: "Footwear",
+      summary: "Uppers, soles, insoles, laces",
       href: "#footwear",
-      image: "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?auto=format&fit=crop&w=1400&q=80",
-      explores: [
+      exploreLabel: "Explore footwear materials",
+      materials: [
         "Upper Materials",
         "Sole Materials",
         "Lining & Textiles",
@@ -72,12 +104,11 @@ export const whatWeSupply = {
     },
     {
       id: "apparel",
-      number: "02",
-      name: "Apparel & Textiles",
-      description: "Materials and textile solutions for modern apparel and garment applications.",
+      title: "Apparel & Textiles",
+      summary: "Fabrics, knits, trims",
       href: "#apparel",
-      image: "https://images.unsplash.com/photo-1558171813-4c077e33bf49?auto=format&fit=crop&w=1400&q=80",
-      explores: [
+      exploreLabel: "Explore apparel materials",
+      materials: [
         "Technical Textiles",
         "Mesh & Knits",
         "Synthetic Fabrics",
@@ -88,9 +119,42 @@ export const whatWeSupply = {
         "Trims & Components",
       ],
     },
+    {
+      id: "hardware",
+      title: "Hardware & Trims",
+      summary: "Buckles, zippers, rivets",
+      href: "#materials",
+      exploreLabel: "Explore hardware materials",
+      materials: [
+        "Buckles & Rings",
+        "Eyelets & Grommets",
+        "Zippers & Sliders",
+        "Snaps & Studs",
+        "Labels & Badges",
+        "Rivets",
+        "Drawcords & Toggles",
+        "Metal Finishings",
+      ],
+    },
+    {
+      id: "packaging",
+      title: "Packaging & Protection",
+      summary: "Boxes, film, inserts",
+      href: "#materials",
+      exploreLabel: "Explore packaging materials",
+      materials: [
+        "Corrugated Board",
+        "Poly Bags & Films",
+        "Tissue & Wrap",
+        "Hang Tags & Tickets",
+        "Shoe Boxes",
+        "Void Fill",
+        "Carton Tape & Seals",
+        "Retail Inserts",
+      ],
+    },
   ],
 };
-
 export const footwearMaterials = {
   eyebrow: "Material guide",
   heading: "What Goes Into Footwear",
@@ -191,110 +255,6 @@ export const apparelMaterials = {
   ],
 };
 
-export const materials = {
-  eyebrow: "Catalogue",
-  heading: "Material Library",
-  body: "A unified view of materials and components across footwear and apparel manufacturing.",
-  items: [
-    {
-      id: "pu",
-      name: "PU",
-      description: "Polyurethane materials used across footwear and apparel applications.",
-      image: "https://images.unsplash.com/photo-1490367532201-b9bc1dc483f6?auto=format&fit=crop&w=1400&q=80",
-    },
-    {
-      id: "pvc",
-      name: "PVC",
-      description: "Versatile sheet materials for structured manufacturing applications.",
-      image: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=1400&q=80",
-    },
-    {
-      id: "microfiber",
-      name: "Microfiber",
-      description: "Fine-fibre materials for consistent upper, lining and textile use.",
-      image: "https://images.unsplash.com/photo-1558171813-4c077e33bf49?auto=format&fit=crop&w=1400&q=80",
-    },
-    {
-      id: "mesh",
-      name: "Mesh",
-      description: "Breathable textile constructions for footwear and apparel.",
-      image: "https://images.unsplash.com/photo-1617038260897-41a1b14f0dfe?auto=format&fit=crop&w=1400&q=80",
-    },
-    {
-      id: "eva",
-      name: "EVA",
-      description: "Lightweight foam compounds used in cushioning systems.",
-      image: "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?auto=format&fit=crop&w=1400&q=80",
-    },
-    {
-      id: "rubber",
-      name: "Rubber",
-      description: "Compounds built for durability, grip and wear performance.",
-      image: "https://images.unsplash.com/photo-1460353581641-37baddab0fa2?auto=format&fit=crop&w=1400&q=80",
-    },
-    {
-      id: "tpr",
-      name: "TPR",
-      description: "Thermoplastic rubber options for flexible constructions.",
-      image: "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=1400&q=80",
-    },
-    {
-      id: "tpu",
-      name: "TPU",
-      description: "High-performance compounds for overlays and structural parts.",
-      image: "https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111?auto=format&fit=crop&w=1400&q=80",
-    },
-    {
-      id: "foam",
-      name: "Foam",
-      description: "Cushioning foams for comfort packs and soft components.",
-      image: "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=1400&q=80",
-    },
-    {
-      id: "textiles",
-      name: "Textiles",
-      description: "Fabric constructions for apparel and garment manufacturing.",
-      image: "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=1400&q=80",
-    },
-    {
-      id: "knits",
-      name: "Knits",
-      description: "Knit constructions for comfort, stretch and movement.",
-      image: "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=1400&q=80",
-    },
-    {
-      id: "performance",
-      name: "Performance Fabrics",
-      description: "Materials suited to sportswear and performance apparel.",
-      image: "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?auto=format&fit=crop&w=1400&q=80",
-    },
-    {
-      id: "lining",
-      name: "Lining",
-      description: "Inner layers supporting comfort, structure and finish.",
-      image: "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&w=1400&q=80",
-    },
-    {
-      id: "elastic",
-      name: "Elastic",
-      description: "Stretch materials for fit, recovery and garment function.",
-      image: "https://images.unsplash.com/photo-1558171813-4c077e33bf49?auto=format&fit=crop&w=1400&q=80",
-    },
-    {
-      id: "trims",
-      name: "Trims",
-      description: "Finishing details for apparel and footwear assembly.",
-      image: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=1400&q=80",
-    },
-    {
-      id: "components",
-      name: "Components",
-      description: "Supporting parts for footwear and apparel manufacturing.",
-      image: "https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111?auto=format&fit=crop&w=1400&q=80",
-    },
-  ],
-};
-
 export const applications = {
   eyebrow: "Range",
   heading: "Built For Different Applications.",
@@ -323,7 +283,7 @@ export const why = {
     },
     {
       title: "Industry Focus",
-      body: "Built around footwear and apparel manufacturing — not consumer fashion retail.",
+      body: "Built around footwear and apparel manufacturing ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â¦ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â not consumer fashion retail.",
     },
     {
       title: "Support",

@@ -1,12 +1,12 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
-import WhatWeSupply from "./components/WhatWeSupply";
-import FootwearMaterials from "./components/FootwearMaterials";
-import ApparelTextiles from "./components/ApparelTextiles";
 import MaterialsShowcase from "./components/MaterialsShowcase";
-import Applications from "./components/Applications";
-import WhyIconic from "./components/WhyIconic";
-import InquiryCTA from "./components/InquiryCTA";
+import WhatWeSupply from "./components/WhatWeSupply";
+import DualSpotlight from "./components/DualSpotlight";
+import ExploreByApplication from "./components/ExploreByApplication";
+import MaterialToProduct from "./components/MaterialToProduct";
+import WhyIconicGroup from "./components/WhyIconicGroup";
+import FinalInquiry from "./components/FinalInquiry";
 
 export default function App() {
   return (
@@ -17,13 +17,13 @@ export default function App() {
       <Navbar />
       <main>
         <Hero />
-        <WhatWeSupply />
-        <FootwearMaterials />
-        <ApparelTextiles />
         <MaterialsShowcase />
-        <Applications />
-        <WhyIconic />
-        <InquiryCTA />
+        <WhatWeSupply />
+        <DualSpotlight />
+        <ExploreByApplication />
+        <MaterialToProduct />
+        <WhyIconicGroup />
+        <FinalInquiry />
       </main>
     </>
   );
