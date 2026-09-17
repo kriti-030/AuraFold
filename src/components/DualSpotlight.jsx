@@ -67,7 +67,6 @@ function SpotlightCard({ panel, flipped, onFlip }) {
           />
           <div className="dual-spot__veil" aria-hidden="true" />
           <div className="dual-spot__copy">
-            <p className="dual-spot__eyebrow">{panel.eyebrow}</p>
             <h3 className="dual-spot__heading">
               <span>{panel.lineOne}</span>
               <strong>{panel.lineTwo}</strong>
@@ -86,7 +85,6 @@ function SpotlightCard({ panel, flipped, onFlip }) {
             onClick={onFlip}
             aria-label={`Close ${panel.lineTwo} categories`}
           >
-            <p className="dual-spot__eyebrow">{panel.eyebrow}</p>
             <h3>{panel.lineTwo}</h3>
           </button>
           <ul className="dual-spot__list">

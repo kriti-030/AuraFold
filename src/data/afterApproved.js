@@ -1,49 +1,55 @@
 /** Content for sections after the approved homepage block. Images must stay unique. */
 
 export const exploreByApplication = {
-  eyebrow: "Applications",
-  heading: "Explore by Application",
-  body: "Navigate materials and components through the products and categories they support.",
+  eyebrow: "Explore by Application",
+  heading: "Materials for Every",
+  headingAccent: "Application",
+  body: "From footwear to apparel, our materials power a wide range of industries and applications.",
   items: [
     {
       id: "footwear",
+      number: "01",
       name: "Footwear",
-      description: "Uppers, soles, foams and components for footwear builds.",
-      href: "#footwear",
+      description: "Upper, sole, foam and components for footwear manufacturing.",
+      href: "/products",
       image:
-        "https://images.unsplash.com/photo-1491553895911-0055eca6402d?auto=format&fit=crop&w=1400&q=80",
+        "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?auto=format&fit=crop&w=1600&q=85",
     },
     {
       id: "apparel",
+      number: "02",
       name: "Apparel",
-      description: "Fabrics and constructions for contemporary garment applications.",
-      href: "#apparel",
+      description: "Fabrics and textile solutions for contemporary garment applications.",
+      href: "/products",
       image:
-        "https://images.unsplash.com/photo-1617137968427-85924c800a22?auto=format&fit=crop&w=1400&q=80",
-    },
-    {
-      id: "sportswear",
-      name: "Sportswear",
-      description: "Performance-oriented materials for active product lines.",
-      href: "#materials",
-      image:
-        "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1400&q=80",
+        "https://images.unsplash.com/photo-1617137968427-85924c800a22?auto=format&fit=crop&w=1400&q=85",
     },
     {
       id: "textiles",
+      number: "03",
       name: "Textiles",
-      description: "Technical and everyday textile directions for manufacturing.",
-      href: "#materials",
+      description: "Woven, knitted and technical textiles for multiple industries.",
+      href: "/products",
       image:
-        "https://images.unsplash.com/photo-1556906781-9a412961c28c?auto=format&fit=crop&w=1400&q=80",
+        "https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&w=1400&q=85",
+    },
+    {
+      id: "sportswear",
+      number: "04",
+      name: "Sportswear",
+      description: "Performance-oriented materials for active lifestyles.",
+      href: "/products",
+      image:
+        "https://images.unsplash.com/photo-1476480862126-209fdbf411a7?auto=format&fit=crop&w=1400&q=85",
     },
     {
       id: "components",
+      number: "05",
       name: "Components",
-      description: "Supporting parts that complete footwear and apparel assemblies.",
-      href: "#materials",
+      description: "Essential components and accessories for better products.",
+      href: "/products",
       image:
-        "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1400&q=80",
+        "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=1400&q=85",
     },
   ],
 };

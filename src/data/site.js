@@ -1,23 +1,22 @@
 export const nav = [
   { label: "Home", href: "#home" },
-  { label: "About", href: "#about" },
   {
     label: "Products",
     href: "#products",
     children: [
-      { label: "Footwear Materials", href: "#footwear" },
-      { label: "Apparel & Textiles", href: "#apparel" },
+      { label: "Footwear Materials & Components", href: "#footwear" },
+      { label: "Apparel & Textile Materials", href: "#apparel" },
     ],
   },
-  { label: "Careers", href: "#careers" },
-  { label: "Contact", href: "#contact" },
+  { label: "About Us", href: "/about" },
+  { label: "Contact Us", href: "#contact" },
 ];
 
 export const hero = {
   eyebrow: "ICONIC GROUP",
   headline: ["Materials That Shape", "Modern Footwear & Apparel."],
   body: "Footwear, apparel and textile materials built for modern manufacturing.",
-  primaryCta: { label: "Explore Materials", href: "#materials" },
+  primaryCta: { label: "Explore Materials", href: "#products" },
   secondaryCta: { label: "Send an Inquiry", href: "#inquiry" },
   showcase: {
     title: "ICONIC GROUP",
@@ -80,7 +79,7 @@ export const hero = {
 
 export const whatWeSupply = {
   lead: "Materials and components for the products people wear, move in, and live in.",
-  heading: "What we supply",
+  heading: "𝐖𝐡𝐞𝐫𝐞 𝐓𝐞𝐱𝐭𝐮𝐫𝐞 𝐌𝐞𝐞𝐭𝐬 𝐏𝐮𝐫𝐩𝐨𝐬𝐞",
   hint: "Click a card to flip it and see what's inside.",
   shelfTitle: "The material shelf",
   shelfHint: "Click or tap a card to flip it.",
@@ -91,6 +90,8 @@ export const whatWeSupply = {
       summary: "Uppers, soles, insoles, laces",
       href: "#footwear",
       exploreLabel: "Explore footwear materials",
+      image:
+        "https://images.unsplash.com/photo-1601924994987-69e26d50dc26?auto=format&fit=crop&w=1200&q=85",
       materials: [
         "Upper Materials",
         "Sole Materials",
@@ -108,6 +109,8 @@ export const whatWeSupply = {
       summary: "Fabrics, knits, trims",
       href: "#apparel",
       exploreLabel: "Explore apparel materials",
+      image:
+        "https://images.unsplash.com/photo-1620799140188-3b2a02fd9a77?auto=format&fit=crop&w=1200&q=85",
       materials: [
         "Technical Textiles",
         "Mesh & Knits",
@@ -123,8 +126,10 @@ export const whatWeSupply = {
       id: "hardware",
       title: "Hardware & Trims",
       summary: "Buckles, zippers, rivets",
-      href: "#materials",
+      href: "#products",
       exploreLabel: "Explore hardware materials",
+      image:
+        "https://images.unsplash.com/photo-1607345366928-199ea26cfe3e?auto=format&fit=crop&w=1200&q=85",
       materials: [
         "Buckles & Rings",
         "Eyelets & Grommets",
@@ -140,8 +145,10 @@ export const whatWeSupply = {
       id: "packaging",
       title: "Packaging & Protection",
       summary: "Boxes, film, inserts",
-      href: "#materials",
+      href: "#products",
       exploreLabel: "Explore packaging materials",
+      image:
+        "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1200&q=85",
       materials: [
         "Corrugated Board",
         "Poly Bags & Films",
@@ -160,7 +167,7 @@ export const footwearMaterials = {
   heading: "What Goes Into Footwear",
   body: "From the upper to the outsole, every layer begins with the right material for modern footwear construction.",
   stripLabel: "Five layers, one build",
-  cta: { label: "View Collection", href: "#materials" },
+  cta: { label: "View Collection", href: "#products" },
   items: [
     {
       id: "upper",
@@ -317,15 +324,14 @@ export const footer = {
       links: [
         { label: "Footwear Materials", href: "#footwear" },
         { label: "Apparel & Textiles", href: "#apparel" },
-        { label: "Material Library", href: "#materials" },
       ],
     },
     {
       title: "Company",
       links: [
-        { label: "About", href: "#about" },
+        { label: "About", href: "/about" },
         { label: "Careers", href: "#careers" },
-        { label: "Contact", href: "#contact" },
+        { label: "Contact", href: "/#contact" },
       ],
     },
     {

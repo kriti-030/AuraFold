@@ -19,7 +19,7 @@ export default function ApparelTextiles() {
             className={`division__item division__item--${index + 1}`}
             as="article"
           >
-            <a className="division__link" href="#materials">
+            <a className="division__link" href="#products">
               <div className="division__media">
                 <img src={item.image} alt="" width="900" height="700" loading="lazy" />
               </div>

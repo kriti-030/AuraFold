@@ -82,6 +82,16 @@ function ShelfCard({ card, flipped, onToggle }) {
           <span className="shelf-card__icon">{icons[card.id]}</span>
           <h3 className="shelf-card__title">{card.title}</h3>
           <p className="shelf-card__summary">{card.summary}</p>
+          <div className="shelf-card__media">
+            <img
+              src={card.image}
+              alt=""
+              width="1200"
+              height="900"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
           <span className="shelf-card__cta">
             Flip for materials
             <span aria-hidden="true"> →</span>
@@ -129,19 +139,10 @@ export default function WhatWeSupply() {
   return (
     <section className="supply" id="products">
       <header className="supply__intro">
-        <p className="supply__lead">{whatWeSupply.lead}</p>
         <h2 className="supply__heading">{whatWeSupply.heading}</h2>
-        <div className="supply__meta">
-          <p className="supply__hint">{whatWeSupply.hint}</p>
-        </div>
       </header>
 
       <div className="supply__shelf">
-        <div className="supply__shelf-head">
-          <h3 className="supply__shelf-title">{whatWeSupply.shelfTitle}</h3>
-          <p className="supply__shelf-hint">{whatWeSupply.shelfHint}</p>
-        </div>
-
         <div className="supply__shelf-grid">
           {whatWeSupply.cards.map((card) => (
             <ShelfCard
