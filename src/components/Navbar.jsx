@@ -1,6 +1,8 @@
 import { useEffect, useMemo, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { SlideTabs } from "./ui/SlideTabs";
+import NavProductsSearch from "./NavProductsSearch";
+import { useProductsSearch } from "../context/ProductsSearchContext";
 
 const NAV_ITEMS = [
   { id: "home", label: "Home", href: "#home", type: "section" },
@@ -27,6 +29,7 @@ function resolveActiveFromScroll() {
 export default function Navbar({ onOpenAuth }) {
   const location = useLocation();
   const navigate = useNavigate();
+  const { pageActive: productsSearchActive } = useProductsSearch();
   const isHome = location.pathname === "/";
   const isProducts =
     location.pathname === "/products" || location.pathname.startsWith("/products/");
@@ -120,7 +123,7 @@ export default function Navbar({ onOpenAuth }) {
 
   return (
     <header className={`nav${scrolled || isProducts || isAbout || !isHome ? " is-scrolled" : ""}`}>
-      <div className="nav__bar">
+      <div className={`nav__bar${productsSearchActive ? " nav__bar--with-search" : ""}`}>
         <Link
           className="nav__brand"
           to="/"
@@ -183,6 +186,8 @@ export default function Navbar({ onOpenAuth }) {
             )}
           />
         </nav>
+
+        {productsSearchActive ? <NavProductsSearch /> : null}
 
         <div className="nav__auth" aria-label="Account">
           <button

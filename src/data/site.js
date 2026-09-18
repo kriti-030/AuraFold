@@ -78,90 +78,83 @@ export const hero = {
 };
 
 export const whatWeSupply = {
-  lead: "Materials and components for the products people wear, move in, and live in.",
-  heading: "𝐖𝐡𝐞𝐫𝐞 𝐓𝐞𝐱𝐭𝐮𝐫𝐞 𝐌𝐞𝐞𝐭𝐬 𝐏𝐮𝐫𝐩𝐨𝐬𝐞",
-  hint: "Click a card to flip it and see what's inside.",
-  shelfTitle: "The material shelf",
-  shelfHint: "Click or tap a card to flip it.",
+  heading: "Discover a curated selection of ICONIC creations.",
   cards: [
+    {
+      id: "handbags",
+      title: "Handbags",
+      href: "/products",
+      image:
+        "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=1200&q=85",
+      alt: "Premium leather handbag against a clean studio background",
+    },
     {
       id: "footwear",
       title: "Footwear",
-      summary: "Uppers, soles, insoles, laces",
-      href: "#footwear",
-      exploreLabel: "Explore footwear materials",
+      href: "/products/footwear",
       image:
-        "https://images.unsplash.com/photo-1601924994987-69e26d50dc26?auto=format&fit=crop&w=1200&q=85",
-      materials: [
-        "Upper Materials",
-        "Sole Materials",
-        "Lining & Textiles",
-        "EVA & Foam",
-        "Insoles",
-        "Footwear Components",
-        "Laces",
-        "Accessories",
-      ],
+        "https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=1200&q=85",
+      alt: "Refined footwear photographed in a soft studio setting",
     },
     {
       id: "apparel",
-      title: "Apparel & Textiles",
-      summary: "Fabrics, knits, trims",
-      href: "#apparel",
-      exploreLabel: "Explore apparel materials",
+      title: "Apparel",
+      href: "/products",
       image:
-        "https://images.unsplash.com/photo-1620799140188-3b2a02fd9a77?auto=format&fit=crop&w=1200&q=85",
-      materials: [
-        "Technical Textiles",
-        "Mesh & Knits",
-        "Synthetic Fabrics",
-        "Lining Materials",
-        "Performance Fabrics",
-        "Elastic Materials",
-        "Garment Accessories",
-        "Trims & Components",
-      ],
+        "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=1200&q=85",
+      alt: "Apparel garments arranged for an editorial material presentation",
     },
     {
-      id: "hardware",
-      title: "Hardware & Trims",
-      summary: "Buckles, zippers, rivets",
-      href: "#products",
-      exploreLabel: "Explore hardware materials",
+      id: "home",
+      title: "Home Decor",
+      href: "/products",
       image:
-        "https://images.unsplash.com/photo-1607345366928-199ea26cfe3e?auto=format&fit=crop&w=1200&q=85",
-      materials: [
-        "Buckles & Rings",
-        "Eyelets & Grommets",
-        "Zippers & Sliders",
-        "Snaps & Studs",
-        "Labels & Badges",
-        "Rivets",
-        "Drawcords & Toggles",
-        "Metal Finishings",
-      ],
-    },
-    {
-      id: "packaging",
-      title: "Packaging & Protection",
-      summary: "Boxes, film, inserts",
-      href: "#products",
-      exploreLabel: "Explore packaging materials",
-      image:
-        "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1200&q=85",
-      materials: [
-        "Corrugated Board",
-        "Poly Bags & Films",
-        "Tissue & Wrap",
-        "Hang Tags & Tickets",
-        "Shoe Boxes",
-        "Void Fill",
-        "Carton Tape & Seals",
-        "Retail Inserts",
-      ],
+        "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1200&q=85",
+      alt: "Home interior materials and decor surfaces in soft natural light",
     },
   ],
 };
+
+export const welcomeIconic = {
+  eyebrow: "About ICONIC GROUP",
+  heading: "Welcome to ICONIC GROUP",
+  body: [
+    { text: "ICONIC GROUP is a materials partner for " },
+    { text: "Footwear", strong: true },
+    { text: ", " },
+    { text: "Apparel", strong: true },
+    { text: ", " },
+    { text: "Textiles", strong: true },
+    {
+      text: " and modern manufacturing. We connect premium surfaces, components and craftsmanship so brands can build with confidence from the first sample to scaled production.",
+    },
+  ],
+  stats: [
+    {
+      id: "categories",
+      title: "4 Core Categories",
+      description:
+        "Footwear, apparel, textiles and material components under one focused supply partner.",
+      icon: "◆",
+    },
+    {
+      id: "process",
+      title: "Sample to Scale",
+      description:
+        "Material guidance built for real manufacturing timelines, consistency and finish quality.",
+      icon: "▣",
+    },
+  ],
+  image:
+    "https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&w=1600&q=85",
+  imageAlt: "Premium textile material rolls in a refined manufacturing environment",
+  mission: {
+    title: "Our Mission",
+    body: "Advance footwear and apparel making through thoughtful materials, reliable components and lasting craftsmanship.",
+  },
+  cta: { label: "Explore Materials", href: "/products" },
+};
+
 export const footwearMaterials = {
   eyebrow: "Material guide",
   heading: "What Goes Into Footwear",

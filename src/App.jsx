@@ -12,10 +12,11 @@ import AboutPage from "./pages/AboutPage";
 import ProductsPage from "./pages/ProductsPage";
 import ProductDetailPage from "./pages/ProductDetailPage";
 import CategoryPage from "./pages/CategoryPage";
+import { ProductsSearchProvider } from "./context/ProductsSearchContext";
 
 function AppShell({ onOpenAuth, authOpen, authMode, setAuthMode, closeAuth }) {
   return (
-    <>
+    <ProductsSearchProvider>
       <a className="skip" href="#home">
         Skip to content
       </a>
@@ -46,7 +47,7 @@ function AppShell({ onOpenAuth, authOpen, authMode, setAuthMode, closeAuth }) {
         onModeChange={setAuthMode}
         onClose={closeAuth}
       />
-    </>
+    </ProductsSearchProvider>
   );
 }
 

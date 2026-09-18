@@ -12,118 +12,13 @@ import {
   productFilterGroups,
   productNavItems,
 } from "../data/productsCatalog";
+import { useProductsSearch } from "../context/ProductsSearchContext";
 
 const EMPTY_FILTERS = {
   category: [],
   materialType: [],
   application: [],
 };
-
-function SearchControl({
-  expanded,
-  query,
-  onQueryChange,
-  onExpand,
-  onCollapse,
-  onSubmit,
-}) {
-  const inputRef = useRef(null);
-
-  useEffect(() => {
-    if (!expanded) return undefined;
-    const frame = window.requestAnimationFrame(() => {
-      inputRef.current?.focus();
-    });
-    return () => window.cancelAnimationFrame(frame);
-  }, [expanded]);
-
-  useEffect(() => {
-    if (!expanded) return undefined;
-    const onKey = (event) => {
-      if (event.key === "Escape") onCollapse();
-    };
-    window.addEventListener("keydown", onKey);
-    return () => window.removeEventListener("keydown", onKey);
-  }, [expanded, onCollapse]);
-
-  const submit = (event) => {
-    event.preventDefault();
-    onSubmit();
-  };
-
-  return (
-    <div className={`products-search${expanded ? " is-expanded" : ""}`}>
-      {!expanded ? (
-        <button
-          type="button"
-          className="products-search__orb"
-          aria-label="Open search"
-          onClick={onExpand}
-        >
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <circle
-              cx="11"
-              cy="11"
-              r="6.5"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1.4"
-            />
-            <path
-              d="M16.2 16.2 20 20"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1.4"
-              strokeLinecap="round"
-            />
-          </svg>
-        </button>
-      ) : (
-        <form className="products-search__bar" onSubmit={submit} role="search">
-          <label className="visually-hidden" htmlFor="products-search-input">
-            Search materials
-          </label>
-          <input
-            id="products-search-input"
-            ref={inputRef}
-            type="search"
-            value={query}
-            onChange={(event) => onQueryChange(event.target.value)}
-            placeholder="Search materials, footwear components, textiles..."
-            autoComplete="off"
-          />
-          <button type="submit" className="products-search__go" aria-label="Search">
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <circle
-                cx="11"
-                cy="11"
-                r="6.5"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="1.4"
-              />
-              <path
-                d="M16.2 16.2 20 20"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="1.4"
-                strokeLinecap="round"
-              />
-            </svg>
-          </button>
-          <button
-            type="button"
-            className="products-search__close"
-            aria-label="Close search"
-            onClick={onCollapse}
-          >
-            ×
-          </button>
-        </form>
-      )}
-    </div>
-  );
-}
 
 function MaterialCard({ item }) {
   return (
@@ -566,10 +461,14 @@ export default function ProductsPage() {
     [location.pathname],
   );
   const heading = getCategoryHeading(navCategory, footwearSelection);
+  const {
+    registerPage,
+    submittedQuery,
+    setExpanded,
+    clearSearch,
+    resetForCategory,
+  } = useProductsSearch();
 
-  const [searchOpen, setSearchOpen] = useState(false);
-  const [query, setQuery] = useState("");
-  const [submittedQuery, setSubmittedQuery] = useState("");
   const [filters, setFilters] = useState(EMPTY_FILTERS);
   const [filtersOpen, setFiltersOpen] = useState(false);
 
@@ -578,17 +477,17 @@ export default function ProductsPage() {
     [navCategory],
   );
 
+  useEffect(() => registerPage(), [registerPage]);
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [location.pathname]);
 
   useEffect(() => {
     setFilters(EMPTY_FILTERS);
-    setSubmittedQuery("");
-    setQuery("");
-    setSearchOpen(false);
+    resetForCategory();
     setFiltersOpen(false);
-  }, [navCategory]);
+  }, [navCategory, resetForCategory]);
 
   const results = useMemo(
     () =>
@@ -604,14 +503,9 @@ export default function ProductsPage() {
     [navCategory, filters, submittedQuery, footwearSelection],
   );
 
-  const runSearch = () => {
-    setSubmittedQuery(query.trim());
-  };
-
-  const clearSearch = () => {
-    setQuery("");
-    setSubmittedQuery("");
-    setSearchOpen(true);
+  const handleClearSearch = () => {
+    clearSearch();
+    setExpanded(true);
   };
 
   const toggleFilter = (groupId, optionId) => {
@@ -640,18 +534,6 @@ export default function ProductsPage() {
 
   return (
     <main className="products-page">
-      <section className="products-hero products-hero--search-only">
-        <p className="products-hero__eyebrow">Products</p>
-        <SearchControl
-          expanded={searchOpen}
-          query={query}
-          onQueryChange={setQuery}
-          onExpand={() => setSearchOpen(true)}
-          onCollapse={() => setSearchOpen(false)}
-          onSubmit={runSearch}
-        />
-      </section>
-
       <ProductsSubnav
         navCategory={navCategory}
         footwearSelection={footwearSelection}
@@ -691,7 +573,7 @@ export default function ProductsPage() {
               {submittedQuery ? (
                 <p className="products-catalog__search-note">
                   Showing results for &ldquo;{submittedQuery}&rdquo;{" "}
-                  <button type="button" onClick={clearSearch}>
+                  <button type="button" onClick={handleClearSearch}>
                     Clear search
                   </button>
                 </p>
@@ -713,7 +595,7 @@ export default function ProductsPage() {
                     <button
                       type="button"
                       className="products-empty__btn"
-                      onClick={clearSearch}
+                      onClick={handleClearSearch}
                     >
                       Clear Search
                     </button>

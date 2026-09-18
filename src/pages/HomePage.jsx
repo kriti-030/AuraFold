@@ -1,8 +1,10 @@
 import Hero from "../components/Hero";
 import WhatWeSupply from "../components/WhatWeSupply";
+import WelcomeIconic from "../components/WelcomeIconic";
 import DualSpotlight from "../components/DualSpotlight";
+import StyleReel from "../components/StyleReel";
 import ExploreByApplication from "../components/ExploreByApplication";
-import MaterialToProduct from "../components/MaterialToProduct";
+import ColorSpotlight from "../components/ColorSpotlight";
 import WhyIconicGroup from "../components/WhyIconicGroup";
 import FinalInquiry from "../components/FinalInquiry";
 import { useEffect } from "react";
@@ -25,9 +27,11 @@ export default function HomePage() {
     <main>
       <Hero />
       <WhatWeSupply />
+      <WelcomeIconic />
       <DualSpotlight />
+      <StyleReel />
       <ExploreByApplication />
-      <MaterialToProduct />
+      <ColorSpotlight />
       <WhyIconicGroup />
       <FinalInquiry />
     </main>
